@@ -36,7 +36,6 @@
 #include "composite_plugin_provider.h"
 #include "ros_pluginlib_plugin_provider_for_plugin_providers.h"
 
-#include <QList>
 #include <QMap>
 #include <QString>
 
@@ -55,12 +54,9 @@ public:
 
   virtual QMap<QString, QString> discover(QObject* discovery_data);
 
-  virtual void shutdown();
-
 private:
 
   RosPluginlibPluginProvider_ForPluginProviders* plugin_provider_;
-  QList<PluginProvider*> providers_;
 
 };
 

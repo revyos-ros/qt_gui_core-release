@@ -2,51 +2,15 @@
 Changelog for package qt_dotgraph
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
 
-2.8.0 (2024-04-26)
+2.2.3 (2024-01-24)
 ------------------
 
-2.7.4 (2024-04-16)
+2.2.2 (2022-08-15)
 ------------------
-* Handle empty dotcode nodes. (`#290 <https://github.com/ros-visualization/qt_gui_core/issues/290>`_)
-* Contributors: Chris Lalancette
+* Cast drawLine input arguments to int (`#264 <https://github.com/ros-visualization/qt_gui_core/issues/264>`_)
+* Contributors: Samuel Lindgren
 
-2.7.3 (2024-03-28)
-------------------
-* Small fix for modern flake8. (`#289 <https://github.com/ros-visualization/qt_gui_core/issues/289>`_)
-* Contributors: Chris Lalancette
-
-2.7.2 (2024-02-07)
-------------------
-
-2.7.1 (2023-12-26)
-------------------
-
-2.7.0 (2023-08-21)
-------------------
-
-2.6.0 (2023-06-07)
-------------------
-
-2.5.0 (2023-04-28)
-------------------
-
-2.4.1 (2023-04-11)
-------------------
-
-2.4.0 (2023-02-14)
-------------------
-
-2.3.2 (2022-11-02)
-------------------
-* Add in LICENSE file
-* Contributors: Chris Lalancette
-
-2.3.1 (2022-08-15)
-------------------
-* Cast drawLine input arguments to int (`#264 <https://github.com/ros-visualization/qt_gui_core/issues/264>`_) (`#265 <https://github.com/ros-visualization/qt_gui_core/issues/265>`_)
-* Contributors: mergify[bot]
-
-2.3.0 (2022-05-10)
+2.2.1 (2022-05-10)
 ------------------
 
 2.2.0 (2022-03-01)

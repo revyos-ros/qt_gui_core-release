@@ -59,6 +59,7 @@ QMap<QString, QString> RecursivePluginProvider::discover(QObject* discovery_data
   }
 
   // instantiate plugins
+  QList<PluginProvider*> providers;
   for (QList<QString>::iterator it = plugin_ids.begin(); it != plugin_ids.end(); it++)
   {
     try
@@ -69,7 +70,7 @@ QMap<QString, QString> RecursivePluginProvider::discover(QObject* discovery_data
       {
         throw std::runtime_error("load returned None");
       }
-      providers_.append(instance);
+      providers.append(instance);
     }
     catch (...)
     {
@@ -78,17 +79,8 @@ QMap<QString, QString> RecursivePluginProvider::discover(QObject* discovery_data
   }
 
   // delegate discovery through instantiated plugin providers to base class
-  set_plugin_providers(providers_);
+  set_plugin_providers(providers);
   return CompositePluginProvider::discover(discovery_data);
-}
-
-void RecursivePluginProvider::shutdown()
-{
-  for (QList<PluginProvider*>::iterator it = providers_.begin(); it != providers_.end(); it++)
-  {
-    plugin_provider_->unload(*it);
-  }
-  CompositePluginProvider::shutdown();
 }
 
 } // namespace
