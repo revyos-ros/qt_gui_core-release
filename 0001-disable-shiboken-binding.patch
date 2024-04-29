@@ -1,0 +1,47 @@
+From 4ebc42b8a8bd322110f69a2bb73246ed4776c3dc Mon Sep 17 00:00:00 2001
+From: Sakura286 <sakura286@outlook.com>
+Date: Mon, 29 Apr 2024 18:37:38 +0800
+Subject: [PATCH] disable shiboken binding
+
+---
+ debian/patches/disable-shiboken.patch | 19 +++++++++++++++++++
+ debian/patches/series                 |  1 +
+ 2 files changed, 20 insertions(+)
+ create mode 100644 debian/patches/disable-shiboken.patch
+ create mode 100644 debian/patches/series
+
+diff --git a/debian/patches/disable-shiboken.patch b/debian/patches/disable-shiboken.patch
+new file mode 100644
+index 00000000..733c57a5
+--- /dev/null
++++ b/debian/patches/disable-shiboken.patch
+@@ -0,0 +1,19 @@
++--- a/src/qt_gui_cpp_shiboken/CMakeLists.txt
+++++ b/src/qt_gui_cpp_shiboken/CMakeLists.txt
++@@ -43,7 +43,8 @@
++ include(${python_qt_binding_DIR}/shiboken_helper.cmake)
++ ament_export_dependencies(pluginlib)
++ if(shiboken_helper_FOUND)
++-  if(Shiboken_VERSION VERSION_GREATER "1.1.1")
+++  message(WARNING "Shiboken would segfault when trying to process qt_gui_cpp (see https://bugreports.qt-project.org/browse/PYSIDE-218). Therefore shiboken bindings are being skipped.")
+++  #[[if(Shiboken_VERSION VERSION_GREATER "1.1.1")
++     # shiboken 1.1.2 and higher will segfault until https://bugreports.qt-project.org/browse/PYSIDE-218 is fixed
++     message(WARNING "Shiboken version ${Shiboken_VERSION} would segfault when trying to process qt_gui_cpp (see https://bugreports.qt-project.org/browse/PYSIDE-218). Therefore shiboken bindings are being skipped.")
++   else()
++@@ -63,5 +64,5 @@
++ 
++     install(TARGETS qt_gui_cpp_shiboken
++       DESTINATION ${PYTHON_INSTALL_DIR}/${PROJECT_NAME})
++-  endif()
+++  endif()]]
++ endif()
+diff --git a/debian/patches/series b/debian/patches/series
+new file mode 100644
+index 00000000..4500c14c
+--- /dev/null
++++ b/debian/patches/series
+@@ -0,0 +1 @@
++disable-shiboken.patch
+-- 
+2.34.1
+
