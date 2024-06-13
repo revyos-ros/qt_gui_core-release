@@ -1,3 +1,4 @@
+release_repo_url: git@github.com:revyos-ros/qt_gui_core-release.git
 tracks:
   crystal:
     actions:
