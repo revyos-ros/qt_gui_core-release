@@ -1,4 +1,4 @@
-From 4ebc42b8a8bd322110f69a2bb73246ed4776c3dc Mon Sep 17 00:00:00 2001
+From 8efa8d19ad62c7a45d8b0f9ad53bf8623fd36d8e Mon Sep 17 00:00:00 2001
 From: Sakura286 <sakura286@outlook.com>
 Date: Mon, 29 Apr 2024 18:37:38 +0800
 Subject: [PATCH] disable shiboken binding
@@ -43,5 +43,5 @@ index 00000000..4500c14c
 @@ -0,0 +1 @@
 +disable-shiboken.patch
 -- 
-2.34.1
+2.45.2
 
