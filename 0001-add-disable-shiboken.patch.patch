@@ -1,4 +1,4 @@
-From a9b8068b5116623d7937430ad31c0e7cd9397079 Mon Sep 17 00:00:00 2001
+From c012b0c47e4e700d6599ed73b545a4c3a1f9f751 Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Thu, 13 Jun 2024 17:34:46 +0800
 Subject: [PATCH] add disable-shiboken.patch
@@ -43,5 +43,5 @@ index 00000000..4500c14c
 @@ -0,0 +1 @@
 +disable-shiboken.patch
 -- 
-2.41.0
+2.46.0
 
