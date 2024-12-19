@@ -1,4 +1,4 @@
-From c012b0c47e4e700d6599ed73b545a4c3a1f9f751 Mon Sep 17 00:00:00 2001
+From 1c022f08ebad9f0762107181fdbf3c1650d7f479 Mon Sep 17 00:00:00 2001
 From: Zheng Junjie <zhengjunjie@iscas.ac.cn>
 Date: Thu, 13 Jun 2024 17:34:46 +0800
 Subject: [PATCH] add disable-shiboken.patch
