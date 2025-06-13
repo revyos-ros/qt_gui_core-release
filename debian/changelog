@@ -1,0 +1,419 @@
+ros-jazzy-qt-dotgraph (2.7.5-2noble) noble; urgency=high
+
+  * Cleanup qt_dotgraph and make the tests more robust. (#296 <https://github.com/ros-visualization/qt_gui_core/issues/296>) (#298 <https://github.com/ros-visualization/qt_gui_core/issues/298>)
+    1.  Remove all uses of LooseVersion here.  The issue it
+    was protecting against is long gone, and LooseVersion is
+    deprecated.  Just remove it.
+    2.  Remove the "simplify" parameter from "add_edge_to_graph".
+    While this is technically an API change, there are no downstream
+    users as far as I can tell and it had no effect.
+    3.  During the test, make sure to replace carriage return with
+    spaces.  This ensures that on Windows, the tests will pass
+    correctly.
+    (cherry picked from commit 4a11ebc5d97ebe718c5a09c98814c186bfb7a4f4)
+  * Contributors: mergify[bot]
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 18 Dec 2024 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.7.4-2noble) noble; urgency=high
+
+  * Handle empty dotcode nodes. (#290 <https://github.com/ros-visualization/qt_gui_core/issues/290>)
+  * Contributors: Chris Lalancette
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 16 Apr 2024 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.7.3-2noble) noble; urgency=high
+
+  * Small fix for modern flake8. (#289 <https://github.com/ros-visualization/qt_gui_core/issues/289>)
+  * Contributors: Chris Lalancette
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 28 Mar 2024 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.7.2-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 07 Feb 2024 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.7.1-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 26 Dec 2023 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.7.0-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 21 Aug 2023 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.6.0-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 07 Jun 2023 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.5.0-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 28 Apr 2023 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.4.1-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 11 Apr 2023 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.4.0-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 14 Feb 2023 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.3.2-2noble) noble; urgency=high
+
+  * Add in LICENSE file
+  * Contributors: Chris Lalancette
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 02 Nov 2022 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.3.1-2noble) noble; urgency=high
+
+  * Cast drawLine input arguments to int (#264 <https://github.com/ros-visualization/qt_gui_core/issues/264>) (#265 <https://github.com/ros-visualization/qt_gui_core/issues/265>)
+  * Contributors: mergify[bot]
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 15 Aug 2022 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.3.0-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 10 May 2022 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.2.0-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 01 Mar 2022 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.1.1-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 14 Jan 2022 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.1.0-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 02 Nov 2021 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.0.1-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 29 Apr 2021 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (2.0.0-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 26 Jan 2021 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (1.1.2-2noble) noble; urgency=high
+
+  * add API to set edge tooltip (#237 <https://github.com/ros-visualization/qt_gui_core/issues/237>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 18 Sep 2020 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (1.1.1-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 03 Aug 2020 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (1.1.0-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 27 May 2020 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (1.0.9-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 26 May 2020 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (1.0.8-2noble) noble; urgency=high
+
+  * please flake8 (#207 <https://github.com/ros-visualization/qt_gui_core/issues/207>)
+  * use the portable way to decide the line break (#200 <https://github.com/ros-visualization/qt_gui_core/issues/200>)
+  * make tests more flexible in terms of whitespaces (#191 <https://github.com/ros-visualization/qt_gui_core/issues/191>, #193 <https://github.com/ros-visualization/qt_gui_core/issues/193>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 05 May 2020 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (1.0.7-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 30 Sep 2019 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (1.0.6-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 10 Jun 2019 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (1.0.4-2noble) noble; urgency=high
+
+  * skip pydot/pygraphviz tests when unavailable (#161 <https://github.com/ros-visualization/qt_gui_core/issues/161>)
+  * remove obsolete maintainer (#159 <https://github.com/ros-visualization/qt_gui_core/issues/159>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 08 Feb 2019 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (1.0.3-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 11 Dec 2018 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (1.0.2-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 11 Dec 2018 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (1.0.1-2noble) noble; urgency=high
+
+  * fix build type (#155 <https://github.com/ros-visualization/qt_gui_core/issues/155>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 11 Dec 2018 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (1.0.0-2noble) noble; urgency=high
+
+  * use ament_lint_auto (#136 <https://github.com/ros-visualization/qt_gui_core/issues/136>)
+  * update tests (#133 <https://github.com/ros-visualization/qt_gui_core/issues/133>)
+  * port to ROS 2 (#135 <https://github.com/ros-visualization/qt_gui_core/issues/135>)
+  * autopep8 (#123 <https://github.com/ros-visualization/qt_gui_core/issues/123>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 10 Dec 2018 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.3.11-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 29 Aug 2018 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.3.10-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Sun, 05 Aug 2018 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.3.9-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 03 Aug 2018 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.3.8-2noble) noble; urgency=high
+
+  * add recursive subgraph parsing, box3d shape, graphics items now immediately parented (#87 <https://github.com/ros-visualization/qt_gui_core/issues/87>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 03 Nov 2017 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.3.7-2noble) noble; urgency=high
+
+  * Fix for Python 3 compatibility (#106 <https://github.com/ros-visualization/qt_gui_core/issues/106>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 25 Oct 2017 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.3.6-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 03 Aug 2017 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.3.5-2noble) noble; urgency=high
+
+  * avoid collision of topic nodes with / and _ (#95 <https://github.com/ros-visualization/qt_gui_core/pull/95>)
+  * small fixes for Python3 compatibility (#88 <https://github.com/ros-visualization/qt_gui_core/pull/88>)
+  * remove color item added unintentionally (#86 <https://github.com/ros-visualization/qt_gui_core/pull/86>)
+  * fix missing label coloring on hover (#85 <https://github.com/ros-visualization/qt_gui_core/pull/85>)
+  * parse subgraphs recursively (#72 <https://github.com/ros-visualization/qt_gui_core/issues/72>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 27 Jul 2017 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.3.4-2noble) noble; urgency=high
+
+  * use Python 3 compatible syntax (#81 <https://github.com/ros-visualization/qt_gui_core/pull/81>)
+  * fix label size in dot graphs (#75 <https://github.com/ros-visualization/qt_gui_core/pull/75>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 24 Jan 2017 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.3.3-2noble) noble; urgency=high
+
+  * work with newer pydot versions (#70 <https://github.com/ros-visualization/qt_gui_core/pull/70>)
+  * make penwidth attribute optional
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 19 Sep 2016 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.3.2-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 21 Apr 2016 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.3.1-2noble) noble; urgency=high
+
+  * fix imports with Qt 5
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 18 Apr 2016 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.3.0-2noble) noble; urgency=high
+
+  * switch to Qt5 (#64 <https://github.com/ros-visualization/qt_gui_core/pull/64>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 01 Apr 2016 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.30-2noble) noble; urgency=high
+
+  * use same color for arrows as for the edge (#60 <https://github.com/ros-visualization/qt_gui_core/issues/60>)
+  * add ability to specify tooltips for nodes (#61 <https://github.com/ros-visualization/qt_gui_core/pull/61>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 30 Mar 2016 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.29-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Sat, 19 Sep 2015 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.28-2noble) noble; urgency=high
+
+  * skip subgraphs without a bounding box (ros-visualization/rqt_common_plugins#321 <https://github.com/ros-visualization/rqt_common_plugins/issues/321>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 08 Jun 2015 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.27-2noble) noble; urgency=high
+
+  * add optional style argument for edges (#51 <https://github.com/ros-visualization/qt_gui_core/pull/51>)
+  * fix tests (#53 <https://github.com/ros-visualization/qt_gui_core/pull/53>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 29 Apr 2015 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.26-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 18 Aug 2014 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.25-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 10 Jul 2014 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.24-2noble) noble; urgency=high
+
+  * add work around for pydot bug in Saucy (#42 <https://github.com/ros-visualization/qt_gui_core/issues/42>)
+  * fix regression 0.2.23 (#41 <https://github.com/ros-visualization/qt_gui_core/issues/41>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 21 May 2014 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.23-2noble) noble; urgency=high
+
+  * add support for edge coloring and changing of pen width
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 07 May 2014 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.22-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 04 Mar 2014 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.21-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 12 Feb 2014 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.20-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Sun, 19 Jan 2014 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.19-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 08 Jan 2014 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.18-2noble) noble; urgency=high
+
+  * improve startup time (#28 <https://github.com/ros-visualization/qt_gui_core/issues/28>)
+  * added kwarg for subgraphlabel
+  * change maintainer of qt_dotgraph (#27 <https://github.com/ros-visualization/qt_gui_core/issues/27>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 09 Oct 2013 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.17-2noble) noble; urgency=high
+
+  * fix the name/label issue with pygraphviz
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 21 Aug 2013 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.16-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 06 Jun 2013 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.15-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 02 Apr 2013 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.14-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 28 Mar 2013 22:42:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.13-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 28 Mar 2013 18:08:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.12-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 17 Jan 2013 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.11-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Sun, 13 Jan 2013 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.10-2noble) noble; urgency=high
+
+  * skip subgraphs with empty bounding box
+  * use color for pydot subgraphs
+  * fix (not used) pygraphviz backend
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 11 Jan 2013 00:00:00 -0000
+
+ros-jazzy-qt-dotgraph (0.2.9-2noble) noble; urgency=high
+
+  * first public release for Groovy
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 21 Dec 2012 00:00:00 -0000
+
+
