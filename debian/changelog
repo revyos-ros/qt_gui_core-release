@@ -1,0 +1,425 @@
+ros-jazzy-qt-gui-cpp (2.7.5-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 18 Dec 2024 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.7.4-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 16 Apr 2024 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.7.3-2noble) noble; urgency=high
+
+  * Switch from rcpputils::fs to std::filesystem (#288 <https://github.com/ros-visualization/qt_gui_core/issues/288>)
+  * Set hints to find the python version we actually want. (#287 <https://github.com/ros-visualization/qt_gui_core/issues/287>)
+  * Contributors: Chris Lalancette, Christophe Bedard
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 28 Mar 2024 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.7.2-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 07 Feb 2024 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.7.1-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 26 Dec 2023 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.7.0-2noble) noble; urgency=high
+
+  * Update to C++17 (#278 <https://github.com/ros-visualization/qt_gui_core/issues/278>)
+  * Contributors: Chris Lalancette
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 21 Aug 2023 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.6.0-2noble) noble; urgency=high
+
+  * fix unload warning (#274 <https://github.com/ros-visualization/qt_gui_core/issues/274>)
+  * Contributors: Chen Lihui
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 07 Jun 2023 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.5.0-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 28 Apr 2023 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.4.1-2noble) noble; urgency=high
+
+  * fix shiboken error (#267 <https://github.com/ros-visualization/qt_gui_core/issues/267>)
+  * Contributors: Christoph Hellmann Santos, Michael Carroll, Rhys Mainwaring
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 11 Apr 2023 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.4.0-2noble) noble; urgency=high
+
+  * Conditionally run import tests when generators are built (#269 <https://github.com/ros-visualization/qt_gui_core/issues/269>)
+  * Contributors: Scott K Logan
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 14 Feb 2023 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.3.2-2noble) noble; urgency=high
+
+  * Add in LICENSE file
+  * Contributors: Chris Lalancette
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 02 Nov 2022 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.3.1-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 15 Aug 2022 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.3.0-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 10 May 2022 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.2.0-2noble) noble; urgency=high
+
+  * Install headers to include${PROJECT_NAME} (#259 <https://github.com/ros-visualization/qt_gui_core/issues/259>)
+  * Contributors: Shane Loretz
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 01 Mar 2022 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.1.1-2noble) noble; urgency=high
+
+  * Export targets instead of old-style CMake variables (#257 <https://github.com/ros-visualization/qt_gui_core/issues/257>)
+  * Contributors: Shane Loretz
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 14 Jan 2022 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.1.0-2noble) noble; urgency=high
+
+  * FindPython3 explicitly instead of FindPythonInterp implicitly (#254 <https://github.com/ros-visualization/qt_gui_core/issues/254>)
+  * Contributors: Shane Loretz
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 02 Nov 2021 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.0.1-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 29 Apr 2021 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (2.0.0-2noble) noble; urgency=high
+
+  * Fix duplicated QMap to QMultiMap (#244 <https://github.com/ros-visualization/qt_gui_core/issues/244>)
+  * Switch to using the filesystem implementation in rcpputils. (#239 <https://github.com/ros-visualization/qt_gui_core/issues/239>)
+  * Contributors: Chris Lalancette, Homalozoa X
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 26 Jan 2021 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (1.1.2-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 18 Sep 2020 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (1.1.1-2noble) noble; urgency=high
+
+  * avoid a warning about C++ plugins on Windows (#232 <https://github.com/ros-visualization/qt_gui_core/issues/232>)
+  * qt_gui_cpp_sip: declare private assignment operator for SIP (#226 <https://github.com/ros-visualization/qt_gui_core/issues/226>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 03 Aug 2020 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (1.1.0-2noble) noble; urgency=high
+
+  * Use ament_target_dependencies for qt_gui_cpp. (#221 <https://github.com/ros-visualization/qt_gui_core/issues/221>)
+  * Contributors: Chris Lalancette
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 27 May 2020 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (1.0.9-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 26 May 2020 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (1.0.8-2noble) noble; urgency=high
+
+  * quiet upstream Qt5 warnings (#210 <https://github.com/ros-visualization/qt_gui_core/issues/210>)
+  * fix project name in log message (#208 <https://github.com/ros-visualization/qt_gui_core/issues/208>)
+  * fixed namespace in typesystem.xml (#201 <https://github.com/ros-visualization/qt_gui_core/issues/201>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 05 May 2020 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (1.0.7-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 30 Sep 2019 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (1.0.6-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 10 Jun 2019 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (1.0.4-2noble) noble; urgency=high
+
+  * support TinyXML2 version 2.2.0 on Xenial (#169 <https://github.com/ros-visualization/qt_gui_core/issues/169>)
+  * set default C++ standard to 14
+  * remove obsolete maintainer (#159 <https://github.com/ros-visualization/qt_gui_core/issues/159>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 08 Feb 2019 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (1.0.3-2noble) noble; urgency=high
+
+  * skip qt_gui_cpp on Windows (#158 <https://github.com/ros-visualization/qt_gui_core/issues/158>)
+  * fix finding Qt5 widgets on Windows (#157 <https://github.com/ros-visualization/qt_gui_core/issues/157>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 11 Dec 2018 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (1.0.2-2noble) noble; urgency=high
+
+  * move build location of qt_gui_cpp_sip library out-of-source (#156 <https://github.com/ros-visualization/qt_gui_core/issues/156>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 11 Dec 2018 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (1.0.1-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 11 Dec 2018 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (1.0.0-2noble) noble; urgency=high
+
+  * port to Windows (#146 <https://github.com/ros-visualization/qt_gui_core/issues/146>)
+  * check check of return value of loadFile (#152 <https://github.com/ros-visualization/qt_gui_core/issues/152>)
+  * add required libraries (#148 <https://github.com/ros-visualization/qt_gui_core/issues/148>)
+  * migrate from tinyxml to tinyxml2 (#147 <https://github.com/ros-visualization/qt_gui_core/issues/147>)
+  * add test for importing sip generated library (#150 <https://github.com/ros-visualization/qt_gui_core/issues/150>)
+  * register plugins at the correct location (#144 <https://github.com/ros-visualization/qt_gui_core/issues/144>)
+  * fix include dir path (#140 <https://github.com/ros-visualization/qt_gui_core/issues/140>)
+  * use ament_lint_auto (#136 <https://github.com/ros-visualization/qt_gui_core/issues/136>)
+  * modify qt_gui_cpp to fix build errors in rqt_gui_core (#137 <https://github.com/ros-visualization/qt_gui_core/issues/137>)
+  * update tests (#133 <https://github.com/ros-visualization/qt_gui_core/issues/133>)
+  * port to ROS 2 (#135 <https://github.com/ros-visualization/qt_gui_core/issues/135>)
+  * remove boost shared_ptr references
+  * remove boost filesystem depends
+  * autopep8 (#123 <https://github.com/ros-visualization/qt_gui_core/issues/123>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 10 Dec 2018 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.3.11-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 29 Aug 2018 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.3.10-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Sun, 05 Aug 2018 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.3.9-2noble) noble; urgency=high
+
+  * change included pluginlib header to avoid deprecation warning (#114 <https://github.com/ros-visualization/qt_gui_core/issues/114>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 03 Aug 2018 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.3.8-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 03 Nov 2017 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.3.7-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 25 Oct 2017 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.3.6-2noble) noble; urgency=high
+
+  * add missing run_depend on TinyXML (#100 <https://github.com/ros-visualization/qt_gui_core/issues/100>)
+  * add TinyXML to target_link_libraries (#99 <https://github.com/ros-visualization/qt_gui_core/issues/99>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 03 Aug 2017 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.3.5-2noble) noble; urgency=high
+
+  * find and depend on tinyxml, add missing tinyxml include (#96 <https://github.com/ros-visualization/qt_gui_core/issues/96>, #97 <https://github.com/ros-visualization/qt_gui_core/issues/97>)
+  * fix relative import for Python3 (#89 <https://github.com/ros-visualization/qt_gui_core/pull/89>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 27 Jul 2017 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.3.4-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 24 Jan 2017 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.3.3-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 19 Sep 2016 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.3.2-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 21 Apr 2016 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.3.1-2noble) noble; urgency=high
+
+  * more fixes for shiboken 2
+  * add missing Qt include directories
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 18 Apr 2016 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.3.0-2noble) noble; urgency=high
+
+  * switch to Qt5 (#64 <https://github.com/ros-visualization/qt_gui_core/pull/64>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 01 Apr 2016 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.30-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 30 Mar 2016 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.29-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Sat, 19 Sep 2015 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.28-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 08 Jun 2015 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.27-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 29 Apr 2015 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.26-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Mon, 18 Aug 2014 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.25-2noble) noble; urgency=high
+
+  * fix finding specific version of PythonLibs with CMake 3 (#45 <https://github.com/ros-visualization/qt_gui_core/issues/45>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 10 Jul 2014 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.24-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 21 May 2014 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.23-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 07 May 2014 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.22-2noble) noble; urgency=high
+
+  * add shutdown notification for plugin providers (#39 <https://github.com/ros-visualization/qt_gui_core/issues/39>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 04 Mar 2014 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.21-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 12 Feb 2014 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.20-2noble) noble; urgency=high
+
+  * disable shiboken when version is detected which would segfault (#35 <https://github.com/ros-visualization/qt_gui_core/issues/35>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Sun, 19 Jan 2014 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.19-2noble) noble; urgency=high
+
+  * use specific python version catkin has decided on
+  * fix sip bindings when paths contain spaces (#33 <https://github.com/ros-visualization/qt_gui_core/issues/33>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 08 Jan 2014 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.18-2noble) noble; urgency=high
+
+  * improve startup time (#28 <https://github.com/ros-visualization/qt_gui_core/issues/28>)
+  * disabled check for existance of library for cpp plugins
+  * fix build on OS X with new version of SIP (#26 <https://github.com/ros-visualization/qt_gui_core/issues/26>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 09 Oct 2013 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.17-2noble) noble; urgency=high
+
+  * add PluginLoadError for know errors to avoid printing stacktraces (ros-visualization/rqt#85 <https://github.com/ros-visualization/rqt/issues/85>)
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Wed, 21 Aug 2013 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.16-2noble) noble; urgency=high
+
+  * make plugin resources relative to plugin.xml (instead of package.xml) (#16 <https://github.com/ros-visualization/qt_gui_core/issues/16>)
+  * fix help provider
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 06 Jun 2013 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.15-2noble) noble; urgency=high
+
+  * revert changes to help_provider from 0.2.13
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Tue, 02 Apr 2013 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.14-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 28 Mar 2013 22:42:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.13-2noble) noble; urgency=high
+
+  * work around for broken QGenericReturnArgument constuctor with shiboken, make it build on Ubuntu precise (ros-visualization/rqt#7 <https://github.com/ros-visualization/rqt/issues/7>)
+  * modify help_provider
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 28 Mar 2013 18:08:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.12-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Thu, 17 Jan 2013 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.11-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Sun, 13 Jan 2013 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.10-2noble) noble; urgency=high
+
+
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 11 Jan 2013 00:00:00 -0000
+
+ros-jazzy-qt-gui-cpp (0.2.9-2noble) noble; urgency=high
+
+  * first public release for Groovy
+
+ -- Dirk Thomas <dthomas@osrfoundation.org>  Fri, 21 Dec 2012 00:00:00 -0000
+
+
