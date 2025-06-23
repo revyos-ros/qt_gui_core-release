@@ -1,10 +1,9 @@
 cmake_minimum_required(VERSION 3.12)
 project(qt_gui_cpp)
 
-# Default to C++17
+# Default to C++14
 if(NOT CMAKE_CXX_STANDARD)
-  set(CMAKE_CXX_STANDARD 17)
-  set(CMAKE_CXX_STANDARD_REQUIRED ON)
+  set(CMAKE_CXX_STANDARD 14)
 endif()
 
 find_package(ament_cmake REQUIRED)
@@ -21,6 +20,7 @@ endif()
 
 find_package(pluginlib REQUIRED)
 find_package(Qt5 REQUIRED COMPONENTS Widgets)
+find_package(rcpputils REQUIRED)
 find_package(tinyxml2_vendor REQUIRED)
 find_package(TinyXML2 REQUIRED)
 
@@ -56,6 +56,7 @@ target_link_libraries(${PROJECT_NAME}
   ${QT_QTGUI_LIBRARY}
   Qt5::Widgets
   pluginlib::pluginlib
+  rcpputils::rcpputils
   tinyxml2::tinyxml2)
 
 add_subdirectory(src/qt_gui_cpp_shiboken)
@@ -74,7 +75,7 @@ install(
   DESTINATION include/${PROJECT_NAME}
 )
 
-ament_export_dependencies(pluginlib TinyXML2)
+ament_export_dependencies(pluginlib rcpputils TinyXML2)
 ament_export_targets(export_${PROJECT_NAME} HAS_LIBRARY_TARGET)
 
 install(TARGETS ${PROJECT_NAME}
@@ -89,17 +90,9 @@ install(TARGETS ${PROJECT_NAME}
 if(BUILD_TESTING)
   find_package(ament_cmake_pytest REQUIRED)
 
-  if(TARGET qt_gui_cpp_shiboken)
-    ament_add_pytest_test(qt_gui_cpp_shiboken test/test_imports_shiboken.py
-      APPEND_ENV PYTHONPATH=${CMAKE_CURRENT_BINARY_DIR}
-      TIMEOUT 90)
-  endif()
-
-  if(TARGET qt_gui_cpp_sip)
-    ament_add_pytest_test(qt_gui_cpp_sip test/test_imports_sip.py
-      APPEND_ENV PYTHONPATH=${CMAKE_CURRENT_BINARY_DIR}
-      TIMEOUT 90)
-  endif()
+  ament_add_pytest_test(qt_gui_cpp test
+    APPEND_ENV PYTHONPATH=${CMAKE_CURRENT_BINARY_DIR}
+    TIMEOUT 90)
 endif()
 
 ament_package(CONFIG_EXTRAS cmake/${PROJECT_NAME}-extras.cmake)
